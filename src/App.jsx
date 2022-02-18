@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import io from 'socket.io-client'
 import Chat from './components/Chat'
 import './App.css'
 
-const socket = io.connect('http://localhost:8080')
+const socket = io.connect('https://chat-app-back-end.herokuapp.com')
 
 function App() {
   const [username, setUserName] = useState("")
