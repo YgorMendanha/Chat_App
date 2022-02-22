@@ -25,7 +25,7 @@ function App() {
           <p>Escolha um User e uma Sala!</p>
           <input type="text" placeholder="User..."  onChange={(e)=>{setUserName(e.target.value)}}/>
           <input type="text" placeholder="Sala..." onChange={(e)=>{setRoom(e.target.value)}}/>
-          <button onClick={joinroom}>Entar</button>
+          <button onClick={joinroom}>Entrar</button>
         </div>
 
       ):(  
