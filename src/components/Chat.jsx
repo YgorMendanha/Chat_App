@@ -16,8 +16,11 @@ function Chat({socket, username, room}) {
                 message: currentMessage,
                 time: new Date(Date.now()).getHours() + ":" + new Date(Date.now()).getMinutes()
             }
+            
             await socket.emit('send_message', MessageData)
             setMessageList((list)=>[...list,MessageData])
+            document.getElementById("msg").value = ""
+            setCurrentMessage("")
 
             
         }
@@ -72,7 +75,7 @@ function Chat({socket, username, room}) {
                 </ScrollToBottom>
             </div>
             <div className={style.chat_footer}>
-                <input type="text" placeholder="Hey..." onChange={(e)=>{setCurrentMessage(e.target.value)}} onKeyPress={(e)=>{
+                <input type="text" id="msg" placeholder="Hey..." onChange={(e)=>{setCurrentMessage(e.target.value)}} onKeyPress={(e)=>{
                     e.key == "Enter" && sendMessage()
                 }}/>
                 <button onClick={sendMessage}  >&#9658;</button>
