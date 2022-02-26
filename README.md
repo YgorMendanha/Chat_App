@@ -3,7 +3,7 @@
 <br>
 <div align="center"> 
 
-![last commit](https://img.shields.io/github/last-commit/YgorMendanha/Chat_App) ![license](https://img.shields.io/github/license/YgorMendanha/Chat_App) ![Deploy](https://img.shields.io/github/deployments/YgorMendanha/Chat_App/Production) 
+![last commit](https://img.shields.io/github/last-commit/YgorMendanha/Chat_App) ![license](https://img.shields.io/github/license/YgorMendanha/Chat_App) ![Deploy](https://img.shields.io/github/deployments/YgorMendanha/Chat_App/github-pages) 
 
 </div> 
 <p align="center"> 
